@@ -1,0 +1,43 @@
+[project]
+
+name = "cnt-collector-config"
+dynamic = ["version", "dependencies"]
+description = "Orcfax cnt collector node config - Orcfax Node"
+readme = "README.md"
+
+requires-python = ">=3.9"
+
+license = {file = "LICENSE.txt"}
+
+authors = [
+  {name = "George Orcfax", email = "george@orcfax.io" },
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements/requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://orcfax.io"
+"Source" = "https://github.com/orcfax/cnt-collector-config"
+
+[project.scripts]
+cnt_collector_config = "cnt_collector_config.main:main"
+cnt-collector-config = "cnt_collector_config.main:main"
+
+[build-system]
+requires = ["setuptools>=67.8.0", "wheel", "setuptools_scm[toml]>=7.1.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
