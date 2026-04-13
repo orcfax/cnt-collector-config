@@ -37,7 +37,7 @@ cnt_collector_config = "cnt_collector_config.main:main"
 cnt-collector-config = "cnt_collector_config.main:main"
 
 [build-system]
-requires = ["setuptools>=67.8.0", "wheel", "setuptools_scm[toml]>=7.1.0"]
+requires = ["setuptools>=82.0.1", "wheel", "setuptools_scm[toml]>=7.1.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
